@@ -2,9 +2,8 @@ module Main exposing (Direction(..), Flags, Model, Msg(..), Page(..), Post, Stat
 
 import Browser
 import Browser.Navigation as Nav
-import Html exposing (Html, a, article, div, em, h1, h2, h3, header, hr, img, main_, node, p, span, text)
-import Html.Attributes exposing (class, datetime, href, src, target)
-import Html.Events exposing (onClick)
+import Html exposing (Html, a, article, div, em, h1, h2, h3, header, main_, p, span, text)
+import Html.Attributes exposing (class, datetime, href, rel, target)
 import Url
 import Utils exposing (Content(..), date, dynamicStyle, section)
 
@@ -157,7 +156,7 @@ bio =
                     , text ". "
                     ]
                 , p [] [ text "You can get in touch with me at: ", a [] [ span [] [ text "justin" ], em [] [ text "@" ], span [] [ text "justinherrick.com" ] ] ]
-                , p [] [ text "You can also find me on ", a [ href "https://twitter.com/jah2488", target "_blank" ] [ text "Twitter" ], text " and on ", a [ href "https://instagram.com/jah2488", target "_blank" ] [ text "Instagram" ], text "." ]
+                , p [] [ text "You can also find me on ", a [ href "https://twitter.com/jah2488", target "_blank", rel "noreferrer noopener" ] [ text "Twitter" ], text " and on ", a [ href "https://instagram.com/jah2488", target "_blank", rel "noopener noreferrer" ] [ text "Instagram" ], text "." ]
                 ]
             ]
         ]
