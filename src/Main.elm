@@ -147,12 +147,12 @@ bio =
             [ div [ class "bio-avatar" ] []
             , div [ class "bio-about" ]
                 [ p []
-                    [ text "Hey 👋\u{1F3FB}, "
+                    [ text "Hey 👋🏻, "
                     , a [ href "/about" ] [ text "I'm Justin." ]
                     , text " I am a Project Director, Software Consultant, Educator, "
                     , a [ href "/talks" ] [ text " Speaker" ]
                     , text ", Entreprenuer, Home Chef, and Cat Parent, currently living in "
-                    , a [ href "" ] [ text "Austin, Texas" ]
+                    , a [ href "" ] [ text "Chicago, IL" ]
                     , text ". "
                     ]
                 , p [] [ text "You can get in touch with me at: ", a [] [ span [] [ text "justin" ], em [] [ text "@" ], span [] [ text "justinherrick.com" ] ] ]
@@ -165,19 +165,30 @@ bio =
 currentSection : Html Msg
 currentSection =
     section "Currently"
-        [ Text "I'm writing a book! Now that the story of Lunar Collective has come to a close, it's time to write down all of the ups, downs, and learning experiences that came out of that process. It is going to be the book I wish I had before I started."
-        , Markup
-            [ text "These days, I am a Project Director for the "
-            , a [ href "https://8thlight.com/locations/austin/" ] [ text "8th Light Austin" ]
-            , text " office. If your company or team needs to get a project to market or needs expert help, let's chat. Reach out."
+        [ Markup
+            [ text "I left "
+            , a [ href "https://github.com" ] [ text "GitHub" ]
+            , text " in July of 2025 and I am currently doing contracting and consulting, returning to my roots to help people and companies succeed in the world of AI, big corporations, and ever shifting demands."
             ]
+        , Text "I am spending lots of time renovating my Chicago style bungalow house that I have recently purchased, and spending time learning pottery."
         ]
 
 
 previousSection : Html Msg
 previousSection =
     section "Previously"
-        [ Markup [ text "I founded ", a [ href "https://lunarcollective.co" ] [ text "Lunar Collective" ], text " in 2016 to see what a modern Software Consultancy could be when it focused on education and empathy with its clients and with its team members.", text "I spent 4 years building a consultancy that would go on to have half a dozen amazing employees, deliver quality software used by millions of people, and have a pretty cool office as well." ]
+        [ Markup
+            [ text "I spent several years at "
+            , a [ href "https://github.com" ] [ text "GitHub" ]
+            , text ", first as a staff manager of the entire pull request team, and eventually as a staff engineer on the much larger Pull Requests department. I worked on and was instrumental to the success of projects such as Merge Queue and Copilot Code Review for PRs."
+            ]
+        , Text "I was writing a book! After the story of Lunar Collective came to a close, it was time to write down all of the ups, downs, and learning experiences that came out of that process. It was going to be the book I wish I had before I started. Unfortunately, the book was never written due to all the happenings of 2020 and the years after."
+        , Markup
+            [ text "Previously, I was a Project Director for the "
+            , a [ href "https://8thlight.com/locations/austin/" ] [ text "8th Light Austin" ]
+            , text " office. I helped companies and teams get projects to market and provided expert help."
+            ]
+        , Markup [ text "I founded ", a [ href "https://lunarcollective.co" ] [ text "Lunar Collective" ], text " in 2016 to see what a modern Software Consultancy could be when it focused on education and empathy with its clients and with its team members.", text "I spent 4 years building a consultancy that would go on to have half a dozen amazing employees, deliver quality software used by millions of people, and have a pretty cool office as well." ]
         , Text "I spent several years teaching full time at a bootcamp called The Iron Yard as a lead instructor, helping to shape curriculum and processes for the company as a whole while teaching students and helping them to achieve their goals. I played a small part in helping nearly a hundred students navigate their first steps into the tech industry and I'll be forever grateful for that experience."
         ]
 

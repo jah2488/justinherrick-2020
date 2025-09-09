@@ -1,19 +1,22 @@
 {
-  "name": "justinherrick-2020",
-  "version": "1.0.0",
-  "description": "personal website",
-  "main": "src/index.js",
-  "directories": {
-    "test": "tests"
-  },
+  "name": "justinherrick-2025",
+  "version": "2.0.0",
+  "description": "Justin Herrick's personal website - 2025 edition",
+  "type": "module",
   "scripts": {
-    "run": "elm-app start",
-    "build": "elm-app build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "elm-format": "elm-format --yes src/",
+    "elm-review": "elm-review"
+  },
+  "devDependencies": {
+    "vite": "^5.4.8",
+    "vite-plugin-elm": "^3.0.0",
+    "elm-tooling": "^1.15.1",
+    "elm-format": "^0.8.7",
+    "elm-review": "^2.12.1"
   },
   "author": "Justin Herrick",
-  "license": "ISC",
-  "dependencies": {
-    "create-elm-app": "^4.2.5"
-  }
+  "license": "MIT"
 }
